@@ -1,0 +1,531 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Encabezado */
+.header {
+  background-image: url("../Imagenes/Bannerdebaum.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  color: black; 
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: black; 
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  max-width: 150px; /* Aumentamos el tamaño máximo del logo */
+  max-height: 120px; /* Aumentamos la altura máxima */
+  object-fit: contain; /* Asegura que el logo no se distorsione */
+}
+
+.header .logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-text .logo {
+  max-height: 100%; 
+  width: auto; 
+}
+
+
+.divider {
+  width: 2px;
+  height: 80px;
+  background-color: black; 
+}
+
+.header-title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: black; 
+}
+
+.language {
+  font-size: 12px;
+  font-weight: bold;
+  color: black; 
+}
+
+.header-subtext {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  color: black; 
+}
+
+
+/* Fondo general */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("../Imagenes/Fondodepagina.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  background-color: black;
+  color: white;
+}
+
+/* Sección Intro */
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-comprar {
+  background-color: #e5007d;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* DJs */
+.intro h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.djs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.dj-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.djs-descripcion {
+  font-size: 0.9rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Combos */
+.combos {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.combos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.combos p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.combo-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.combo-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  width: 250px;
+}
+
+.combo-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.combo-card p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.combo-card .btn-comprar {
+  margin-top: 15px;
+}
+
+/* Turismo y hospedaje */
+.turismo, .hospedaje {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.turismo h2, .hospedaje h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.turismo-list, .hospedaje-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.turismo-card, .hospedaje-card {
+  position: relative;
+  width: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.turismo-card img, .hospedaje-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(70%);
+  border-radius: 15px;
+}
+
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-align: left;
+}
+
+.info h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.btn-info {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.btn-info:hover {
+  background-color: #ff00a0;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer .social a {
+  margin: 0 10px;
+  color: #e5007d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer .social a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .turismo-card, .hospedaje-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .combo-card {
+    width: 90%;
+  }
+}
+.revive90s {
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 40px 20px;
+  border-radius: 12px;
+}
+
+.revive90s h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.revive-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.revive-card {
+  text-align: center;
+  color: white;
+}
+
+.revive-card img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.revive-card p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.alcancia-texto {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: white;
+}
+
+.alcancia-texto h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.alcancia-texto p {
+  font-size: 1rem;
+}
+
+.como-llegar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.btn-maps {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-maps:hover {
+  background-color: #ff00a0;
+  color: white;
+}
+
+.vinilo {
+  position: absolute;
+  bottom: -20px;     
+  left: 0;
+  width: 600px;      
+  opacity: 0.9;      
+  z-index: 2;        
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .revive-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vinilo {
+    display: none;
+  }
+}
+.turismo-card, .hospedaje-card {
+  position: relative;
+  width: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.turismo-card:hover, .hospedaje-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+  z-index: 5;
+}
+/* ======= NAVBAR Responsive ======= */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+}
+
+.navbar {
+  width: 100%;
+  display: none;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.navbar.open {
+  display: block;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  margin: 10px 0;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* --- LOGO Y TITULO --- */
+.logo-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.logo {
+  height: 60px;
+}
+
+.header-title h1 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.language {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* --- SUBTÍTULO --- */
+.header-subtext {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* --- RESPONSIVE: para pantallas grandes --- */
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar {
+    display: block !important;
+    width: auto;
+    background: none;
+    padding: 0;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .navbar li {
+    margin: 0;
+  }
+}
