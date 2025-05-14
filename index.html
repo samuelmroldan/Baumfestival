@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baum Festival 10</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      
+      <nav class="navbar" id="navbar">
+        <ul>
+          
+          <li><a href="#combos" onclick="closeMenu()">Combos</a></li>
+          <li><a href="#turismo" onclick="closeMenu()">Turismo</a></li>
+          <li><a href="#hospedaje" onclick="closeMenu()">Hospedaje</a></li>
+          <li><a href="#revive90s" onclick="closeMenu()">Revive los sets</a></li>
+      
+        </ul>
+      </nav>
+
+      <div class="logo-text">
+        <img src="Imagenes/logobaum.png" alt="Logo Baum Festival" class="logo" />
+    
+        <div class="header-title">
+          <h1>Vale la pena<br />seguir bailando.</h1>
+        </div> 
+      </div>
+
+      <div class="language">EN</div>
+    </div>
+    <p class="header-subtext">31 de mayo - 01 de julio 2025 | Bogotá - Colombia</p>
+  </header>
+
+
+  <section class="intro" id="inicio">
+    <h2>Bienvenidos al Baum Festival 10</h2>
+    <p>Una década de beats en la pista de baile más grande del país, que se enorgullece de abrirte la puerta de los sonidos.</p>
+    <p>Tendremos un programa vasto y complejo de géneros insignes, especializados y vanguardistas de la música electrónica.</p>
+    <button class="btn-comprar">Comprar entradas</button>
+
+    <h3>DJs internacionales</h3>
+    <div class="djs">
+      <div class="dj-card">
+        <img src="Imagenes/djuno.jpg" alt="Fatboy Slim">
+      </div>
+      <div class="dj-card">
+        <img src="Imagenes/djdos.jpg" alt="Armand Van Helden">
+      </div>
+    </div>
+    <p class="djs-descripcion">Figuras legendarias encabezan cada día: el maestro inglés del big beat, Fatboy Slim, y el bastión del house, Armand Van Helden.</p>
+  </section>
+
+  <section class="combos" id="combos">
+    <h2>Combos</h2>
+    <p>Compra tus entradas en eTicket (impuestos y cargos incluidos) y asegura tu lugar en la décima edición de BAUM.</p>
+    <div class="combo-list">
+      <div class="combo-card">
+        <h3>Combo VIP</h3>
+        <p>Combo 2 días</p>
+        <p>$800.000 COP</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+      <div class="combo-card">
+        <h3>Combo General - Etapa 2</h3>
+        <p>Combo 2 días</p>
+        <p>$529.000 COP</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+      <div class="combo-card">
+        <h3>Combo Backstage</h3>
+        <p>Combo 2 días</p>
+        <p>$2.232.000 COP</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="turismo" id="turismo">
+    <h2>¿Qué hacer en la ciudad antes o después del festival?</h2>
+    <div class="turismo-list">
+      <div class="turismo-card">
+        <img src="Imagenes/turismouno.png" alt="Plaza de Bolívar">
+        <div class="info">
+          <h3>Plaza de Bolívar</h3>
+          <button class="btn-info">Ver más</button>
+        </div>
+      </div>
+      <div class="turismo-card">
+        <img src="Imagenes/turismodos.png" alt="Museo Botero">
+        <div class="info">
+          <h3>Museo Botero</h3>
+          <button class="btn-info">Ver más</button>
+        </div>
+      </div>
+      <div class="turismo-card">
+        <img src="Imagenes/turismotres.png" alt="Museo del Oro">
+        <div class="info">
+          <h3>Museo del Oro</h3>
+          <button class="btn-info">Ver más</button>
+        </div>
+      </div>
+      <div class="turismo-card">
+        <img src="Imagenes/turismocuatro.png" alt="Monserrate">
+        <div class="info">
+          <h3>Monserrate</h3>
+          <button class="btn-info">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hospedaje" id="hospedaje">
+    <h2>Hospedajes cercanos</h2>
+    <div class="hospedaje-list">
+      <div class="hospedaje-card">
+        <img src="Imagenes/hoteluno.png" alt="Hotel El Dorado">
+        <div class="info">
+          <h3>Hotel El Dorado</h3>
+          <button class="btn-info">Contacto</button>
+        </div>
+      </div>
+      <div class="hospedaje-card">
+        <img src="Imagenes/hoteldos.jpg" alt="Hotel Sonesta">
+        <div class="info">
+          <h3>Hotel Sonesta</h3>
+          <button class="btn-info">Contacto</button>
+        </div>
+      </div>
+      <div class="hospedaje-card">
+        <img src="Imagenes/hoteltres.png" alt="Hotel Estelar">
+        <div class="info">
+          <h3>Hotel Estelar</h3>
+          <button class="btn-info">Contacto</button>
+        </div>
+      </div>
+      <div class="hospedaje-card">
+        <img src="Imagenes/hotelcuatro.png" alt="Hotel Cabecera Imperial">
+        <div class="info">
+          <h3>Hotel Cabecera Imperial</h3>
+          <button class="btn-info">Contacto</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="revive90s" id="revive90s">
+    <h2>Revive los sets</h2>
+    <div class="revive-cards">
+      <div class="revive-card">
+        <img src="Imagenes/playlistuno.png" alt="Beat Machine">
+        <p>Beat Machine</p>
+      </div>
+      <div class="revive-card">
+        <img src="Imagenes/playlistdos.png" alt="Cassette Crew">
+        <p>Cassette Crew</p>
+      </div>
+    </div>
+  
+    <div class="alcancia-texto">
+      <h3>Alcancías</h3>
+      <p>¡Comenzá tu ahorro para el evento con estilo! Con nuestras alcancías retro, vas a poder juntar de a poquito lo necesario para no perderte esta experiencia única. Encontralas en nuestros puntos de venta o contactanos por redes.</p>
+    </div>
+  
+    <div class="como-llegar">
+      <h2>¿Cómo llegar?</h2>
+      <a href="https://waze.com" target="_blank" class="btn-maps">Waze</a>
+      <a href="https://www.google.com/maps/dir//Corferias,+Carrera+37,+Bogot%C3%A1/@4.6291791,-74.1312432,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9bd9b9e73d65:0x3f449bb47da9bef3!2m2!1d-74.0899575!2d4.6291803?entry=ttu" target="_blank" class="btn-maps">Google Maps</a>
+    </div>
+  
+    <img src="Imagenes/discodedj.png" class="vinilo" alt="Disco de DJ">
+  </section>
+
+  <footer>
+    <p>© 2025 Baum Festival 10. Derechos Reservados</p>
+    <div class="social">
+      <a href="https://www.instagram.com/baumfestival?igsh=ejVoa3l5MTdoaDJq" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@baumfestival?_t=ZS-8wKODqmgo3U&_r=1" target="_blank">TikTok</a>
+      <a href="https://www.facebook.com/share/16CgP9Wk9N/?mibextid=wwXIfr" target="_blank">Facebook</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navbar = document.getElementById("navbar");
+      navbar.style.display = navbar.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
+
+        
+        
